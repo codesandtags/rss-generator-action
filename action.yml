@@ -1,0 +1,18 @@
+name: "RSS Generator Action"
+author: "Codes and Tags"
+description: "Generates an RSS feed for your website or blog."
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "git-branch"
+  color: "blue"
+inputs:
+  email:
+    description: "Your email address"
+    required: true
+    default: "${{ github.actor}}@localhost"
+  name:
+    description: "Your name"
+    required: true
+    default: "${{ github.actor }}"
