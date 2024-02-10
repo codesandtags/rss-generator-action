@@ -6,14 +6,14 @@ Custom Github Action to run the RSS generator.
 
 In your `workflow.yml` o Github actions YML file, include the `step`
 
-```
+```yaml
     - name: Run RSS Generator
       uses: codesandtags/rss-generator-action@main
 ```
 
 Here is a full example:
 
-```
+```yaml
 name: Generate RSS Feed
 on: [push]
 
